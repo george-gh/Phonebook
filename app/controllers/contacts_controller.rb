@@ -1,4 +1,6 @@
 class ContactsController < ApplicationController
+ 
+  # layout "contact"
 
   # contacts
   # GET /contacts(.:format)

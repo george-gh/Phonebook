@@ -1,6 +1,6 @@
-<h1><%= t('contacts') %></h1>
+<h3 class="text-center text-primary"><%= t('contacts') %></h3>
 <% unless @contacts.blank? %>
-  <table class="contacts_list">
+  <table class="table table-bordered">
     <thead>
       <tr>
         <td><%= t('first_name')%></td>
@@ -17,8 +17,8 @@
           <td><%= link_to t('show'), contact_path(contact) %></td>
           <td><%= link_to t('edit'), edit_contact_path(contact) %></td>
           <td><%= link_to t('destroy'), contact_path(contact), 
-				       method: :delete, 
-				       data: { confirm: t('destroy_confirmation') } %></td>
+				        method: :delete, 
+				        data: { confirm: t('destroy_confirmation') } %></td>
         </tr>
       <% end %>
     </tbody>
