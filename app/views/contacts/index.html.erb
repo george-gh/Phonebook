@@ -1,0 +1,30 @@
+<h1><%= t('contacts') %></h1>
+<% unless @contacts.blank? %>
+  <table class="contacts_list">
+    <thead>
+      <tr>
+        <td><%= t('first_name')%></td>
+        <td><%= t('last_name') %></td>
+        <td><%= t('phone_number') %></td>
+      </tr>
+    </thead>
+    <tbody>
+      <% @contacts.each do |contact| %>
+        <tr>
+          <td><%= contact.first_name %></td>
+          <td><%= contact.last_name %></td>
+          <td><%= contact.phone_number %></td>
+          <td><%= link_to t('show'), contact_path(contact) %></td>
+          <td><%= link_to t('edit'), edit_contact_path(contact) %></td>
+          <td><%= link_to t('destroy'), contact_path(contact), 
+				       method: :delete, 
+				       data: { confirm: t('destroy_confirmation') } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% else %>
+  <div class="contacts_list_empty">
+    <em>t('empty_contact_list')</em>
+  </div>
+<% end %>
