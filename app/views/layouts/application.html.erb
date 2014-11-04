@@ -19,30 +19,11 @@
   <![endif]-->
 </head>
 <body>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row clearfix">
       <div class="col-md-12 column">
-        <nav class="navbar navbar-default" role="navigation">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="#">
-                <img alt="Brand" src="https://cdn1.iconfinder.com/data/icons/pretty-office-part-13-reflection-style/128/phonebook.png">
-              </a>
-              <ul class="nav navbar-nav pull-right">
-                <li class="<%= 'active' if current_page?(homepage_index_path) %>">
-                  <%= link_to t('homepage'), homepage_index_path %>
-                </li>
-                <li class="<%= 'active' if current_page?(contacts_path) %>">
-                  <%= link_to t('contacts'), contacts_path %>
-                </li>
-                <li class="<%= 'active' if current_page?(new_contact_path) %>">
-                  <%= link_to t('add_contact'), new_contact_path %>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      <%= yield %>
+        <%= render "layouts/navbar" %>
+        <%= yield %>
       </div>
     </div>
   </div>

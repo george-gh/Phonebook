@@ -1,11 +1,11 @@
 <h3 class="text-center text-primary"><%= t('contacts') %></h3>
 <% unless @contacts.blank? %>
-  <table class="table table-bordered">
+  <table class="table table-hover">
     <thead>
       <tr>
-        <td><%= t('first_name')%></td>
-        <td><%= t('last_name') %></td>
-        <td><%= t('phone_number') %></td>
+        <th><%= t('first_name')%></th>
+        <th><%= t('last_name') %></th>
+        <th><%= t('phone_number') %></th>
       </tr>
     </thead>
     <tbody>

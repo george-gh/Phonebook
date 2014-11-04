@@ -1,30 +1,36 @@
-<h1><%= t('new_contact')%></h1>
-<div class="contact_form" id="new_contact_form">
-  <%= form_for @contact, url: contacts_path do |f| %>
-    <div class="form_input first_name" id="first_name_input">
-      <%= f.label :first_name %>
-      <%= f.text_field :first_name %>
-      <% if @contact.errors[:first_name].any? %>
-        <%= @contact.errors[:first_name].join(", ") %>
-      <% end %>
-    </div>
+<h3 class="text-center text-muted"><%= t('new_contact')%></h3>
+<%#= form_for @contact, url: contacts_path, html: { role: "form", class: "form-inline" } do |f| %>
+<form role="form" class="form-inline">
+  <div class="form_group">
+    <%#= f.label :first_name %>
+    <label for="first_name"><%= t('first_name') %></label>
+    <%#= f.text_field :first_name, class: "form_control" %>
+    <input type="text" class="form-control" id="first_name" />
+    <% if @contact.errors[:first_name].any? %>
+      <%= @contact.errors[:first_name].join(", ") %>
+    <% end %>
+  </div>
 
-    <div class="form_input last_name" id="last_name_input">
-      <%= f.label :last_name %>
-      <%= f.text_field :last_name %>
-      <% if @contact.errors[:last_name].any? %>
-        <%= @contact.errors[:last_name].join(", ") %>
-      <% end %>
-    </div>
+  <div class="form_group">
+    <%#= f.label :last_name %>
+    <label for="last_name"><%= t('last_name') %></label>
+    <%#= f.text_field :last_name, class: "form_control" %>
+    <input type="text" class="form-control" id="last_name" />
+    <% if @contact.errors[:last_name].any? %>
+      <%= @contact.errors[:last_name].join(", ") %>
+    <% end %>
+  </div>
 
-    <div class="form_input phone_number" id="phone_number_input">
-      <%= f.label :phone_number %>
-      <%= f.text_field :phone_number %>
-      <% if @contact.errors[:phone_number].any? %>
-        <%= @contact.errors[:phone_number].join(", ") %>
-      <% end %>
-    </div>
-    <%= f.submit %>
-  <% end %>
-</div>
-
+  <div class="form_group">
+    <%#= f.label :phone_number %>
+    <label for="phone_number"><%= t('phone_number') %></label>
+    <%#= f.text_field :phone_number, class: "form_control" %>
+    <input type="text" class="form-control" id="phone_number" />
+    <% if @contact.errors[:phone_number].any? %>
+      <%= @contact.errors[:phone_number].join(", ") %>
+    <% end %>
+  </div>
+  <%#= f.submit class: "btn btn-default" %>
+  <button type="submit" class="btn btn-default"><%= t('submit') %></button>
+<%# end %>
+</form>
