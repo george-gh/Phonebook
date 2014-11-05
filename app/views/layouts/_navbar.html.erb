@@ -5,7 +5,7 @@
         <img alt="Brand" src="https://cdn1.iconfinder.com/data/icons/pretty-office-part-13-reflection-style/128/phonebook.png" />
       </a>
       <ul class="nav navbar-nav pull-right">
-        <li class="<%= 'active' if current_page?(homepage_index_path) %>">
+        <li class="<%= 'active' if (current_page?(homepage_index_path) or current_page?(root_path)) %>">
           <%= link_to t('homepage'), homepage_index_path %>
         </li>
         <li class="<%= 'active' if current_page?(contacts_path) %>">

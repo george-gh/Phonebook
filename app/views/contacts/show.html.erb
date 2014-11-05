@@ -1,46 +1,18 @@
-<div class="col-md-12 column">
-  <h3 class="text-center text-muted"><%= t('Details') %></h3>
-  <!--
-  <div class="show_contact first_name" id="#{contact.id}_first_name">
-    <strong><%= t('first_name') %></strong>
-    <%= @contact.first_name %>
-  </div>
-  <div class="show_contact last_name" id="#{contact.id}_last_name">
-    <strong><%= t('last_name') %></strong>
-    <%= @contact.last_name %>
-  </div>
-  <div class="show_contact phone_number" id="#{@contact.id}_phone_number">
-    <strong><%= t('phone_number') %></strong>
-    <%= @contact.phone_number %>
-  </div>
-  -->
-  <table class="table table-hover">
-    <thead>
-      <tr>
-        <th>
-          <%= t('first_name') %>
-	</th>
-        <th>
-	  <%= t('last_name') %>
-	</th>
-	<th>
-	  <%= t('phone_number') %>
-	</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-	  <%= @contact.first_name %>
-	</td>
-	<td>
-          <%= @contact.last_name %>
-	</td>
-	<td>
-	  <%= @contact.phone_number %>
-	</td>
-      </tr>
-    </tbody>
-  </table>
-  <%= link_to t('back_to_contacts'), contacts_path %>
-</div>
+<h3 class="text-center text-primary"><%= t('Details') %></h3>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th><%= t('first_name') %></th>
+      <th><%= t('last_name') %></th>
+      <th><%= t('phone_number') %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= @contact.first_name %></td>
+      <td><%= @contact.last_name %></td>
+      <td><%= @contact.phone_number %></td>
+    </tr>
+  </tbody>
+</table>
+<%= link_to t('back_to_contacts'), contacts_path %>
