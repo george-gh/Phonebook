@@ -6,14 +6,21 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+Ruby: 2.1.4
+Rails: 4.1.7
 
 * System dependencies
+After check out the project launch:
+bundle install
+to install all gem and dependencies
+More details on Gemfile
 
 * Configuration
+Edit config/database.yml
 
-* Database creation
-
-* Database initialization
+* Database creation and initialization
+Run the following command from the root path of the application:
+rake db:setup
 
 * How to run the test suite
 
