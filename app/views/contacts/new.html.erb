@@ -21,7 +21,7 @@
     </div>
     <%= render "error_messages", contact: @contact, field: :phone_number %>
   </div>
-  <div class="col-sm-offset-5 col-sm-12">
-    <%= f.submit t('submit'), class: "btn btn-default" %>
+  <div class="col-sm-12">
+    <%= f.submit t('submit'), class: "btn btn-default col-sm-offset-5" %>
   </div>
 <% end %>
