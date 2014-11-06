@@ -1,0 +1,8 @@
+<% if contact.errors[field].any? %>
+  <div class="col-sm-2">
+    <div id="messages" class="alert alert-dismissable alert-danger">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+      <%= contact.errors[field].join(", ") %>
+    </div>
+  </div>
+<% end %>
