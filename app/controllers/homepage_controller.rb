@@ -1,7 +1,7 @@
 class HomepageController < ApplicationController
 
   def index
-    @contacts = params[:contacts] || []    
+    # @contacts = params[:contacts] || []    
   end
 
 end

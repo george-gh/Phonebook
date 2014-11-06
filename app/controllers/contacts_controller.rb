@@ -62,14 +62,11 @@ class ContactsController < ApplicationController
   # search action
   def search
     search_param = params[:searchCriteria]
-    search_field = search_param if [:first_name,:last_name,:phone_number].include?(search_param.to_sym)
     value = params[:inputText]
-    conditions = { search_field => value }
+    conditions = { search_param => value }
     @contacts = Contact.search conditions
-    # @contacts = Contact.where(sanitize_sql(conditions))
-    # @contacts = Contact.where("#{search_field} = ?", value)
 
-    redirect_to homepage_index_path(@contacts)
+    redirect_to homepage_index_path
   end
 
   private
