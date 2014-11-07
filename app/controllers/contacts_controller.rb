@@ -66,7 +66,12 @@ class ContactsController < ApplicationController
     conditions = { search_param => value }
     @contacts = Contact.search conditions
 
-    redirect_to homepage_index_path
+    respond_to do |format|
+      format.html { redirect_to homepage_index_path }
+      # format.js { redirect_to homepage_index_path, location: @contacts }
+      format.js
+      format.json { render json: @contacts, status: :success, location: @contacts }
+    end
   end
 
   private

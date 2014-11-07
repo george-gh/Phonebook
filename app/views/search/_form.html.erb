@@ -1,7 +1,7 @@
 <h3 class="text-center text-muted">
   <%= t('search_contact') %>
 </h3>
-<%= form_tag search_contacts_path, :class=> "form-horizontal", :role => "form" do %>
+<%= form_tag search_contacts_path, remote: :true, class: "form-horizontal", role:"form" do %>
   <div class="form-group">
     <div class="col-sm-2">
       <label for="searchCriteria" class="control-label col-sm-offset-4"><%= t('search_by') %></label>

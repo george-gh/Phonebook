@@ -1,5 +1,7 @@
+<div id="search_results">
 <% unless @contacts.blank? %>
-  <table class="table table-bordered">
+  <h3 class="text-center text-info"><%= t('results') %></h3>
+  <table class="table table-hover">
     <thead>
       <tr>
         <td><%= t('first_name')%></td>
@@ -23,3 +25,4 @@
     </tbody>
   </table>  
 <% end %>
+</div>

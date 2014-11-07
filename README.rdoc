@@ -13,7 +13,9 @@ Rails: 4.1.7
 After check out the project launch:
 bundle install
 to install all gem and dependencies
-More details on Gemfile
+
+This application uses Twitter Bootstrap (3.3.0 version) as a CDN, so you need an internet connection
+to load css and js from this framework
 
 * Configuration
 Edit config/database.yml
@@ -22,13 +24,7 @@ Edit config/database.yml
 Run the following command from the root path of the application:
 rake db:setup
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
 * Deployment instructions
-
-* ...
 
 
 Please feel free to use a different markup language if you do not plan to run
