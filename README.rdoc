@@ -5,21 +5,30 @@ application up and running.
 
 * Ruby version
 Ruby version used in this project is the 2.1.4
-Rails version is 4.1.7, it will installed by 'bundle install' command
+More information about Ruby language at https://www.ruby-lang.org
+If you use RVM (recommended), will be automatically selected this version, 
+and created a "phonebook" gemset. More about RVM at http://rvm.io/
 
 * System dependencies
 After check out the project from git launch the command:
 
 <b>bundle install</b>
 
-to install all gem and dependencies
+to install all gem and dependencies. We're using Rails 4.1.7 version
 
 * Database creation and initialization
 Run the following command from the root path of the application:
 
 <b>rake db:setup</b>
 
+to create database (we're using Sqlite3) and running initial migrations
+
+* Run the application
+Go to the application root path and lauch the command:
+<b>rails s</b>
+it will starts a local webserver on port 3000
+Then you can open a web browser and go to http://localhost:3000
+
 
 This application uses Twitter Bootstrap (3.3.0 version) as a CDN, so you need an internet connection
 to load css and js from this framework
-
