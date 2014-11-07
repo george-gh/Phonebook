@@ -19,7 +19,7 @@
   <![endif]-->
 </head>
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid" id="main">
     <div class="row clearfix">
       <div class="col-md-12 column">
         <%= render "layouts/navbar" %>
@@ -27,8 +27,7 @@
       </div>
     </div>
   </div>
-  <script src="//netdna.bootstrapcdn.com/bootstrap/<%= bootstrap_version %>/js/bootstrap.min.js"></script>
-  <%#= link_to '<span class="glyphicon-class glyphicon glyphicon-chevron-up"></span> Back to top'.html_safe, '#Top' %>
   <%= render "layouts/footer" %>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/<%= bootstrap_version %>/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -20,12 +20,14 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  application_name: "Phonebook"
+  application_info: "A simple way to manage phone contacts"
   contacts: "Contacts"
   contact: "Contact"
   new_contact: "New Contact"
   edit: "Edit"
   show: "Show"
-  destroy: "Destroy"
+  destroy: "Delete"
   destroy_confirmation: "Are you sure?"
   empty_contact_list: "Contact list empty"
   first_name: "First name"

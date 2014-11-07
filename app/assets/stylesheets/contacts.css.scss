@@ -4,7 +4,17 @@
 
 .alert {
 	padding: 5px;
+	margin-bottom: 0px;
 }
+
 .alert-dismissable .close {
 	position: static;
+}
+
+.form-group {
+	margin-bottom: 25px;
+}
+
+.contact-details {
+	margin-top: 60px; 
 }

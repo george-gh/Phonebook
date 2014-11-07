@@ -1,18 +1,26 @@
 <h3 class="text-center text-primary"><%= t('Details') %></h3>
-<table class="table table-hover">
-  <thead>
-    <tr>
-      <th><%= t('first_name') %></th>
-      <th><%= t('last_name') %></th>
-      <th><%= t('phone_number') %></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><%= @contact.first_name %></td>
-      <td><%= @contact.last_name %></td>
-      <td><%= @contact.phone_number %></td>
-    </tr>
-  </tbody>
-</table>
+<div class="row clearfix contact-details">
+  <div class="col-md-4 column">
+  </div>
+  <div class="col-md-4 column">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th><%= t('first_name') %></th>
+          <th><%= t('last_name') %></th>
+          <th><%= t('phone_number') %></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><%= @contact.first_name %></td>
+          <td><%= @contact.last_name %></td>
+          <td><%= @contact.phone_number %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-md-4 column">
+  </div>
+</div>
 <%= link_to t('back_to_contacts'), contacts_path %>

@@ -2,8 +2,7 @@
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">
-        <!--<img alt="Brand" src="https://cdn1.iconfinder.com/data/icons/pretty-office-part-13-reflection-style/128/phonebook.png" />-->
-        <img alt="Brand" src="http://www.autonettools.com/images/icons/phone%20book.jpg" />
+        <%= image_tag "phonebook_logo.png", size: "80x80", class: "logo" %>
       </a>
       <ul class="nav navbar-nav pull-right">
         <li class="<%= 'active' if (current_page?(homepage_index_path) or current_page?(root_path)) %>">

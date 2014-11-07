@@ -1,4 +1,4 @@
-<h3 class="text-center text-primary">Phonebook</h3>
-<p class="text-center">A simple way to manage phone contacts</p>
+<h3 class="text-center text-primary"><%= t('application_name') %></h3>
+<p class="text-center"><%= t('application_info') %></p>
 <%= render "search/form" %>
 <%= render "search/results", locals: { contacts: @contacts } %>

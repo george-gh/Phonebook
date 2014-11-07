@@ -17,8 +17,9 @@
           <td><%= link_to t('show'), contact_path(contact) %></td>
           <td><%= link_to t('edit'), edit_contact_path(contact) %></td>
           <td><%= link_to t('destroy'), contact_path(contact), 
-				        method: :delete, 
-				        data: { confirm: t('destroy_confirmation') } %></td>
+				        method: :delete,
+                                        class: "alert-destroy" %></td>
+				        <!-- # data: { confirm: t('destroy_confirmation') } %></td>-->
         </tr>
       <% end %>
     </tbody>
