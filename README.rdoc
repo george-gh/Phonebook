@@ -10,14 +10,14 @@ Rails version is 4.1.7, it will installed by 'bundle install' command
 * System dependencies
 After check out the project from git launch the command:
 
-*bundle install*
+[bundle install]
 
 to install all gem and dependencies
 
 * Database creation and initialization
 Run the following command from the root path of the application:
 
-*rake db:setup*
+[rake db:setup]
 
 
 This application uses Twitter Bootstrap (3.3.0 version) as a CDN, so you need an internet connection
