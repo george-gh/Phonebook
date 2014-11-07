@@ -4,7 +4,9 @@
       <a class="navbar-brand" href="#">
         <%= image_tag "phonebook_logo.png", size: "80x80", class: "logo" %>
       </a>
-      <ul class="nav navbar-nav pull-right">
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
         <li class="<%= 'active' if (current_page?(homepage_index_path) or current_page?(root_path)) %>">
           <%= link_to t('homepage'), homepage_index_path %>
         </li>
@@ -15,6 +17,7 @@
           <%= link_to t('new_contact'), new_contact_path %>
         </li>
       </ul>
+      <%= render "layouts/language_switcher" %>
     </div>
   </div>
 </nav>

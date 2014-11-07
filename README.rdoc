@@ -3,29 +3,19 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
-
 * Ruby version
-Ruby: 2.1.4
-Rails: 4.1.7
+Ruby version used in this project is the 2.1.4
+Rails version is 4.1.7, it will installed by 'bundle install' command
 
 * System dependencies
-After check out the project launch:
-bundle install
+After check out the project from git launch the command:
+<strong>bundle install</strong>
 to install all gem and dependencies
+
+* Database creation and initialization
+Run the following command from the root path of the application:
+<strong>rake db:setup</strong>
 
 This application uses Twitter Bootstrap (3.3.0 version) as a CDN, so you need an internet connection
 to load css and js from this framework
 
-* Configuration
-Edit config/database.yml
-
-* Database creation and initialization
-Run the following command from the root path of the application:
-rake db:setup
-
-* Deployment instructions
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.

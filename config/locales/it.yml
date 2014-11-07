@@ -19,7 +19,7 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
+it:
   application_name: "Phonebook"
   application_info: "Un semplice gestore di contatti telefonici"
   contacts: "Contatti"
@@ -38,10 +38,12 @@ en:
   search_by: "Cerca per campo"
   back_to_contacts: "Torna ai contatti"
   add_contact: "Crea contatto"
-  details: "Dettagli"
+  details: "Informazioni del Contatto"
   submit: "Crea"
   edit_contact: "Modifica Contatto"
   results: "Risultati"
   no_results_found: "Nessun risultato"
   footer_powered_by: "Realizzato da"
   myself: "Giorgio Bruschini"
+  en_language: "Inglese"
+  it_language: "Italiano"
