@@ -25,7 +25,9 @@ to create database (we're using Sqlite3) and running initial migrations
 
 * Run the application
 Go to the application root path and lauch the command:
+
 <b>rails s</b>
+
 it will starts a local webserver on port 3000
 Then you can open a web browser and go to http://localhost:3000
 
