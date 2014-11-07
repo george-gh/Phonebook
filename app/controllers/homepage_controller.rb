@@ -1,7 +1,7 @@
 class HomepageController < ApplicationController
 
   def index
-    # @contacts = Contact.all
+    # @search = false
   end
 
 end

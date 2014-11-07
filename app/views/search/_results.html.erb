@@ -23,6 +23,12 @@
         </tr>
       <% end %>
     </tbody>
-  </table>  
+  </table>
+<% else %>
+  <% if @search %>
+    <div class="row clearfix">
+      <h3 class="text-center text-info"><%= t('no_results_found') %></h3>
+    </div>
+  <% end %>
 <% end %>
 </div>

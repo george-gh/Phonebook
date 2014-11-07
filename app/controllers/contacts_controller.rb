@@ -65,6 +65,7 @@ class ContactsController < ApplicationController
     value = params[:inputText]
     conditions = { search_param => value }
     @contacts = Contact.search conditions
+    @search = true
 
     respond_to do |format|
       format.html { redirect_to homepage_index_path }
