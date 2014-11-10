@@ -1,9 +1,9 @@
 <ul class="nav navbar-nav navbar-right">
   <li>
     <% if I18n.locale == I18n.default_locale %>
-      <%= link_to image_tag("italian_flag.jpg"), :locale=>'it' %>
+      <%= link_to image_tag("italian_flag.jpg"), locale: "it" %>
     <% else %>
-      <%= link_to image_tag("english_flag.png"), :locale=>'en' %>
+      <%= link_to image_tag("english_flag.png"), locale: "en" %>
     <% end %>
   </li>
 </ul>

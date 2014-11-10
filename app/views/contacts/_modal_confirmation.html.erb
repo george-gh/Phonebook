@@ -1,0 +1,21 @@
+<div class="modal fade" id="destroyConfirmation" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">
+          <span aria-hidden="true">&times;</span>
+          <span class="sr-only"><%= t('close_modal') %></span>
+        </button>
+        <h4 class="modal-title"><%= t('destroy_confirmation_header_message')%></h4>
+      </div>
+      <div class="modal-body">
+        <p><%= t('destroy_confirmation_body_message') %>?</p>
+      </div>
+      <div class="modal-footer">
+        <%#= link_to t('confirm_button'), contact_path(), method: :delete, class: "btn btn-success" %>
+        <button type="button" class="btn btn-default" data-dismiss="modal"><%= t('confirm_button') %></button>
+        <button type="button" class="btn btn-danger"><%= t('deny_button') %></button>
+      </div>
+    </div>
+  </div>
+</div>

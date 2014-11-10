@@ -47,3 +47,8 @@ it:
   myself: "Giorgio Bruschini"
   en_language: "Inglese"
   it_language: "Italiano"
+  close_modal: "Chiudi"
+  destroy_confirmation_header_message: "Elimina contatto"
+  destroy_confirmation_body_message: "Sei sicuro di voler eliminare il contatto?"
+  confirm_button: "Sì"
+  deny_button: "No"
