@@ -20,6 +20,15 @@
 }
 
 thead th {
-    background-color: #8FAAD5;
-    color: white;
+	background-color: #8FAAD5;
+	color: white;
+	text-align: center;
+}
+
+tbody td {
+	text-align: center;
+}
+
+table td.text {
+	padding-top: 14px !important;
 }
