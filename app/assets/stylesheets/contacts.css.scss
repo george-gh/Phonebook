@@ -19,20 +19,20 @@
 	margin-top: 60px; 
 }
 
-thead th {
+table.contactIndex thead th {
 	background-color: #8FAAD5;
 	color: white;
 	text-align: center;
 }
 
-tbody td {
+table.contactIndex tbody td {
 	text-align: center;
 }
 
-table td.text {
+table.contactIndex td.text {
 	padding-top: 14px !important;
 }
 
-table td.actionButtons {
+table.contactIndex td.actionButtons {
 	width: 10%;
 }
