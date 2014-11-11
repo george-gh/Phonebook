@@ -17,11 +17,13 @@
           <td class="text"><%= contact.first_name %></td>
           <td class="text"><%= contact.last_name %></td>
           <td class="text"><%= contact.phone_number %></td>
-          <td><%= link_to t('show'), contact_path(contact), class: "btn btn-success" %></td>
-          <td><%= link_to t('edit'), edit_contact_path(contact), class: "btn btn-primary" %></td>
-	  <td><%= button_tag t('destroy'), class: "btn btn-danger", data: { toggle: "modal", 
-									    target: "#destroyConfirmation", 
-									    contactId: contact.id } %></td>
+          <td class="actionButtons"><%= link_to t('show'), contact_path(contact), class: "btn btn-success" %></td>
+          <td class="actionButtons"><%= link_to t('edit'), edit_contact_path(contact), class: "btn btn-warning" %></td>
+	  <td class="actionButtons"><%= button_tag t('destroy'), 
+                                                   class: "btn btn-danger", 
+                                                   data: { toggle: "modal", 
+							   target: "#destroyConfirmation", 
+							   contactId: contact.id } %></td>
         </tr>
       <% end %>
     </tbody>
