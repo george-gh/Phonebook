@@ -4,23 +4,23 @@
   <table class="table table-bordered searchResults">
     <thead>
       <tr>
-        <td><%= t('first_name')%></td>
-        <td><%= t('last_name') %></td>
-        <td><%= t('phone_number') %></td>
-        <td></td>
-	<td></td>
-	<td></td>
+        <th><%= t('first_name')%></th>
+        <th><%= t('last_name') %></th>
+        <th><%= t('phone_number') %></th>
+        <th></th>
+	<th></th>
+	<th></th>
       </tr>
     </thead>
     <tbody>
       <% @contacts.each do |contact| %>
         <tr>
-          <td><%= contact.first_name %></td>
-          <td><%= contact.last_name %></td>
-          <td><%= contact.phone_number %></td>
-          <td><%= link_to t('show'), contact_path(contact), class: "btn btn-success" %></td>
-          <td><%= link_to t('edit'), edit_contact_path(contact), class: "btn btn-warning" %></td>
-          <td><%= link_to t('destroy'), contact_path(contact),
+          <td class="text"><%= contact.first_name %></td>
+          <td class="text"><%= contact.last_name %></td>
+          <td class="text"><%= contact.phone_number %></td>
+          <td class="actionButtons"><%= link_to t('show'), contact_path(contact), class: "btn btn-success" %></td>
+          <td class="actionButtons"><%= link_to t('edit'), edit_contact_path(contact), class: "btn btn-warning" %></td>
+          <td class="actionButtons"><%= link_to t('destroy'), contact_path(contact),
                                         method: :delete,
                     			class: "btn btn-danger",
                                         data: { confirm: t('destroy_confirmation') } %></td>

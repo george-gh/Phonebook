@@ -36,3 +36,18 @@ table.contactIndex td.text {
 table.contactIndex td.actionButtons {
 	width: 10%;
 }
+
+table.contactDetails thead th {
+        background-color: #8FAAD5;
+        color: white;
+        text-align: center;
+}
+
+table.contactDetails td.text {
+        padding-top: 14px !important;
+}
+
+table.contactDetails tbody td {
+        text-align: center;
+}
+

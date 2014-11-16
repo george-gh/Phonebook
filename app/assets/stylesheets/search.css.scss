@@ -6,3 +6,22 @@ table.searchResults thead td {
 	background-color: #8FAAD5;
         color: white;	
 }
+
+table.searchResults thead th {
+        background-color: #8FAAD5;
+        color: white;
+        text-align: center;
+}
+
+table.searchResults tbody td {
+        text-align: center;
+}
+
+table.searchResults td.text {
+        padding-top: 14px !important;
+}
+
+table.searchResults td.actionButtons {
+        width: 10%;
+}
+

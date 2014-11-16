@@ -3,7 +3,7 @@
   <div class="col-md-4 column">
   </div>
   <div class="col-md-4 column">
-    <table class="table table-bordered">
+    <table class="table table-bordered contactDetails">
       <thead>
         <tr>
           <th><%= t('first_name') %></th>
@@ -13,9 +13,9 @@
       </thead>
       <tbody>
         <tr>
-          <td><%= @contact.first_name %></td>
-          <td><%= @contact.last_name %></td>
-          <td><%= @contact.phone_number %></td>
+          <td class="text"><%= @contact.first_name %></td>
+          <td class="text"><%= @contact.last_name %></td>
+          <td class="text"><%= @contact.phone_number %></td>
         </tr>
       </tbody>
     </table>
